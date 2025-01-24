@@ -18,7 +18,7 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
     { name: 'Ghi chỉ số', icon: 'palette', color: '#98FB98', action: () => navigation.navigate('form') },
     { name: 'Ghi chỉ số trực tuyến', icon: 'cloud-upload', color: '#87CEEB' },
     { name: 'Tổng hợp', icon: 'list', color: '#FFB6C1' },
-    { name: 'Tra cứu khách hàng', icon: 'search', color: '#FFA500' },
+    { name: 'Tra cứu khách hàng', icon: 'search', color: '#FFA500',action: () => navigation.navigate('custormer_info') },
     { name: 'Quản lý hình ảnh', icon: 'photo', color: '#1E90FF' },
     { name: 'Trợ giúp', icon: 'help', color: '#FF6347' },
   ];

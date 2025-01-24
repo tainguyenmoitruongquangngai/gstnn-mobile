@@ -6,11 +6,13 @@ import AboutScreen from "../review/about";
 import AppHeader from "./app.header";
 import React from "react";
 import FormScreen from "../review/FormScreen";
+import CustormerScreen from "../review/customerInfo";
 
 export type RootStackParamList = {
     home: undefined;
     form: undefined;
     review_detail:undefined;
+    custormer_info: undefined;
   };
 
 const HomeLayout = () => {
@@ -33,7 +35,12 @@ const HomeLayout = () => {
       <Stack.Screen
         name="form"
         component={FormScreen}
-        options={{ title: "Nhập số liệu" }}
+        options={{ title: "Truyền số liệu nước dưới đất" }}
+      />
+      <Stack.Screen
+        name="custormer_info"
+        component={CustormerScreen}
+        options={{ title: "Thông tin khách hàng" }}
       />
     </Stack.Navigator>
   );

@@ -11,7 +11,10 @@ const FormScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Truyền số liệu:</Text>
+      <Text style={styles.label}>Tên công trình: Công trình A</Text>
+      <Text style={styles.label}>Số giấy phép: GP123</Text>
+
+      <Text style={styles.label}>Lưu lượng khai thác của từng giếng:</Text>
       <TextInput
         style={styles.input}
         value={value}
@@ -19,7 +22,23 @@ const FormScreen: React.FC = () => {
         keyboardType="numeric"
         placeholder="Nhập số..."
       />
-      <Button title="Lưu" onPress={handleSave} />
+       <Text style={styles.label}>Mực nước trong giếng khai thác:</Text>
+      <TextInput
+        style={styles.input}
+        value={value}
+        onChangeText={setValue}
+        keyboardType="numeric"
+        placeholder="Nhập số..."
+      />
+       <Text style={styles.label}>Mực nước trong giếng quan trắc:</Text>
+      <TextInput
+        style={styles.input}
+        value={value}
+        onChangeText={setValue}
+        keyboardType="numeric"
+        placeholder="Nhập số..."
+      />
+      <Button title="Gửi dữ liệu" onPress={handleSave} />
     </View>
   );
 };
